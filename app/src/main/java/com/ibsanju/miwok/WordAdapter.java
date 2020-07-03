@@ -13,13 +13,8 @@ public
 class WordAdapter extends ArrayAdapter<Word> {
     private static final String TAG = "WordAdapter";
 
-//    public
-//    WordAdapter(Activity context, ArrayList<Word> words) {
-//        super(context,0,words);
-//    }
-public
-WordAdapter(Activity context, ArrayList<Word> words) {    super(context, 0, words);}
 
+public WordAdapter(Activity context, ArrayList<Word> words) { super(context, 0, words); }
 
     @Override
     public
