@@ -93,15 +93,26 @@ class Word {
      * Returns whether or not there is an image for this word.
      */
     public
-    boolean hasImage() {
-        return mImageResourceId != NO_IMAGE_PROVIDED;
-    }
+    boolean hasImage() { return mImageResourceId != NO_IMAGE_PROVIDED; }
 
     /**
      * Return the audio resource ID of the word.
      */
     public
-    int getAudioResourceId() {
-        return mAudioResourceId;
+    int getAudioResourceId() { return mAudioResourceId; }
+
+    //    Optional ================================================================
+    /**
+     * Returns the string representation of the {@link Word} object.
+     */
+    @Override
+    public
+    String toString() {
+        return "Word{" +
+                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
+                ", mAudioResourceId=" + mAudioResourceId +
+                ", mImageResourceId=" + mImageResourceId +
+                '}';
     }
 }
